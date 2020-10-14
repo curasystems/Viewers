@@ -33,6 +33,8 @@ module.exports = (env, argv) => {
   const isProdBuild = process.env.NODE_ENV === 'production';
   const hasProxy = PROXY_TARGET && PROXY_DOMAIN;
 
+  console.log('is production build', isProdBuild);
+
   const mergedConfig = merge(baseConfig, {
     entry: {
       app: ENTRY_TARGET,
@@ -44,6 +46,9 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [...extractStyleChunksRule(isProdBuild)],
+    },
+    optimization: {
+      minimize: false,
     },
     plugins: [
       // Uncomment to generate bundle analyzer

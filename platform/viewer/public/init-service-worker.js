@@ -3,14 +3,16 @@
 // modules, so it's perfectly fine to serve this code to any browsers
 // (older browsers will just ignore it)
 //
-import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/5.0.0-beta.1/workbox-window.prod.mjs';
+import { Workbox } from './third_party/workbox/workbox-v5.1.4/workbox-window.dev.mjs'; //https://storage.googleapis.com/workbox-cdn/releases/5.0.0-beta.1/workbox-window.prod.mjs';
 
 var supportsServiceWorker = 'serviceWorker' in navigator;
 var isNotLocalDevelopment =
   ['localhost', '127'].indexOf(location.hostname) === -1;
 
-if (supportsServiceWorker && isNotLocalDevelopment) {
+if (supportsServiceWorker) {
+  //&& isNotLocalDevelopment) {
   const swFileLocation = (window.PUBLIC_URL || '/') + 'sw.js';
+
   const wb = new Workbox(swFileLocation);
 
   // Add an event listener to detect when the registered

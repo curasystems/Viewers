@@ -1,7 +1,12 @@
 // https://developers.google.com/web/tools/workbox/guides/troubleshoot-and-debug
 importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/5.0.0-beta.1/workbox-sw.js'
+  '/third_party/workbox/workbox-v5.1.4/workbox-sw.js'
+  //'https://storage.googleapis.com/workbox-cdn/releases/5.0.0-beta.1/workbox-sw.js'
 );
+
+workbox.setConfig({
+  modulePathPrefix: '/third_party/workbox/workbox-v5.1.4/',
+});
 
 // Install newest
 // https://developers.google.com/web/tools/workbox/modules/workbox-core
