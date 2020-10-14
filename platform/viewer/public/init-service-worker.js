@@ -9,8 +9,7 @@ var supportsServiceWorker = 'serviceWorker' in navigator;
 var isNotLocalDevelopment =
   ['localhost', '127'].indexOf(location.hostname) === -1;
 
-if (supportsServiceWorker) {
-  //&& isNotLocalDevelopment) {
+if (supportsServiceWorker && isNotLocalDevelopment) {
   const swFileLocation = (window.PUBLIC_URL || '/') + 'sw.js';
 
   const wb = new Workbox(swFileLocation);

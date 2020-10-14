@@ -33,8 +33,6 @@ module.exports = (env, argv) => {
   const isProdBuild = process.env.NODE_ENV === 'production';
   const hasProxy = PROXY_TARGET && PROXY_DOMAIN;
 
-  console.log('is production build', isProdBuild);
-
   const mergedConfig = merge(baseConfig, {
     entry: {
       app: ENTRY_TARGET,
