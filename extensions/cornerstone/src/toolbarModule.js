@@ -80,15 +80,15 @@ const definitions = [
     commandName: 'setToolActive',
     commandOptions: { toolName: 'Length' },
   },
-  {
-    id: 'ArrowAnnotate',
-    label: 'Annotate',
-    icon: 'measure-non-target',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'ArrowAnnotate' },
-  },
+  // {
+  //   id: 'ArrowAnnotate',
+  //   label: 'Annotate',
+  //   icon: 'measure-non-target',
+  //   //
+  //   type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+  //   commandName: 'setToolActive',
+  //   commandOptions: { toolName: 'ArrowAnnotate' },
+  // },
   {
     id: 'Angle',
     label: 'Angle',

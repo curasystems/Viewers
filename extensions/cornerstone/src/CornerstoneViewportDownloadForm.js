@@ -15,9 +15,14 @@ const MAX_TEXTURE_SIZE = 10000;
 const CornerstoneViewportDownloadForm = ({ onClose, activeViewportIndex }) => {
   const activeEnabledElement = getEnabledElement(activeViewportIndex);
 
+  const cornerStoneOptions = {
+    // TODO: It's not working with WADO-RS requests (see getWADORSImageId)	        renderer: 'webgl'
+    renderer: 'webgl2',
+  };
+
   const enableViewport = viewportElement => {
     if (viewportElement) {
-      cornerstone.enable(viewportElement);
+      cornerstone.enable(viewportElement, cornerStoneOptions);
     }
   };
 
