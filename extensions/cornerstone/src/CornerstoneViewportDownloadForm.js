@@ -17,7 +17,7 @@ const CornerstoneViewportDownloadForm = ({ onClose, activeViewportIndex }) => {
 
   const cornerStoneOptions = {
     // TODO: It's not working with WADO-RS requests (see getWADORSImageId)	        renderer: 'webgl'
-    renderer: 'webgl2',
+    // renderer: 'webgl2',
   };
 
   const enableViewport = viewportElement => {
