@@ -8,6 +8,7 @@ import pt_BR from './pt-BR/';
 import ru from './ru/';
 import vi from './vi/';
 import zh from './zh/';
+import de from './de/';
 
 export default {
   ...de,
