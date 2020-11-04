@@ -1,9 +1,9 @@
 {
-  "Criteria nonconformities": "Criteria nonconformities",
+  "Criteria nonconformities": "Kriterien für Nichtkonformität",
   "Delete": "Löschen",
   "Description": "Beschreibung",
   "MAX": "MAX",
-  "NonTargets": "NonTargets",
-  "Relabel": "Relabel",
-  "Targets": "Targets"
+  "NonTargets": "NichtZiele",
+  "Relabel": "Umbenennen",
+  "Targets": "Ziele"
 }
