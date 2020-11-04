@@ -13,6 +13,7 @@ export default {
   ...de,
   ...en_US,
   ...es,
+  ...de,
   ...fr,
   ...ja_JP,
   ...nl,
