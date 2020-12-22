@@ -11,7 +11,6 @@ import zh from './zh/';
 import de from './de/';
 
 export default {
-  ...de,
   ...en_US,
   ...es,
   ...de,
